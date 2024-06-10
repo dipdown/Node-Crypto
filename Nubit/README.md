@@ -7,7 +7,7 @@ Nubit is a scalable, cost-efficient, data availability layer secured by Bitcoin 
    ```
 
 # Hardware Requirements
-## The hardware requirements for a Light Node are quite low:
+The hardware requirements for a Light Node are quite low:
 - 1 core CPU
 - 500 MB RAM
 - 40 GB storage
