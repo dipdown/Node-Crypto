@@ -16,7 +16,7 @@ display_logo() {
 
 ";
   echo -e "                   \033[48;2;9;10;12m Node Nubit \e[0m";
-  echo -e "\e[0;37m              Telegram : \e[4;35mhttps://t.me/eevrxx/";
+  echo -e "\e[0;37m           Telegram : \e[4;35mhttps://t.me/eevrxx/";
   echo -e "\e[0m"
   echo -e ""
   echo -e ""
