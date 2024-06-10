@@ -3,7 +3,7 @@ Nubit is a scalable, cost-efficient, data availability layer secured by Bitcoin 
 
 # Installation
 
- ```sh
+   ```sh
    screen -Rd nubit
    ```
 
