@@ -3,5 +3,13 @@ Nubit is a scalable, cost-efficient, data availability layer secured by Bitcoin 
 
 # Installation
    ```sh
-   wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/Nubit/light-nodes.sh && chmod +x light-nodes.sh && dos2unix light-nodes.sh && ./light-nodes.sh
+   wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/Nubit/light-nodes.sh && apt install dos2unix -y && dos2unix light-nodes.sh && chmod +x light-nodes.sh && ./light-nodes.sh
    ```
+
+# Hardware Requirements
+## The hardware requirements for a Light Node are quite low:
+- 1 core CPU
+- 500 MB RAM
+- 40 GB storage
+- 0.1 Mbps connection
+
