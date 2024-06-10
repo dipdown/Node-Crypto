@@ -1,9 +1,29 @@
 #!/bin/bash
 
-echo "Wait for Node..."
+# Function to display the logo
+display_logo() {
+  echo -e "\e[1;32m
 
-# Define the spinner function
-function spinner() {
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⠿⠛⠉⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠉⠉⠛⠿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⠁⠀⢀⣴⣶⣦⣄⡀⠀⠙⠻⠟⠋⠀⢀⣠⣴⣶⣦⡀⠀⠈⣿⣿⣿⣿
+⣿⣿⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⠶⠀⠀⠀⠀⠶⣿⣿⣿⣿⣿⣿⠀⠀⢸⣿⣿⣿
+⣿⣿⣿⣿⡀⠀⠈⠻⠿⠟⠋⠁⠀⣠⣴⣦⣄⠀⠈⠙⠻⠿⠟⠁⠀⢀⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣶⣤⣀⣀⣀⣤⣶⣿⣿⣿⣿⣿⣿⣶⣤⣀⣀⣀⣤⣶⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+";
+  echo -e "                 \033[48;2;9;10;12m Node Nubit \e[0m";
+  echo -e "\e[0;37m Telegram : \e[4;35mhttps://t.me/eevrxx/";
+  echo -e "\e[0m"
+  echo -e ""
+  echo -e ""
+}
+
+# Function to handle the spinner
+spinner() {
   task=$1
   msg=$2
   tput civis
@@ -23,29 +43,16 @@ function spinner() {
 
 # Spinner Character
 SPINNER="⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏"
-msg="${2-InProgress}"
-task="${3-$1}"
-$1 & spinner "$task" "$msg"
 
 # Display the logo
-echo -e "\e[1;32m
+display_logo
 
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⠿⠛⠉⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠉⠉⠛⠿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⠁⠀⢀⣴⣶⣦⣄⡀⠀⠙⠻⠟⠋⠀⢀⣠⣴⣶⣦⡀⠀⠈⣿⣿⣿⣿
-⣿⣿⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⠶⠀⠀⠀⠀⠶⣿⣿⣿⣿⣿⣿⠀⠀⢸⣿⣿⣿
-⣿⣿⣿⣿⡀⠀⠈⠻⠿⠟⠋⠁⠀⣠⣴⣦⣄⠀⠈⠙⠻⠿⠟⠁⠀⢀⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣶⣤⣀⣀⣀⣤⣶⣿⣿⣿⣿⣿⣿⣶⣤⣀⣀⣀⣤⣶⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+echo "Wait for Node..."
 
-";
-echo -e "                 \033[48;2;9;10;12m Node Nubit \e[0m";
-echo -e "\e[0;37m Telegram : \e[4;35mhttps://t.me/eevrxx/";
-echo -e "\e[0m"
-echo -e ""
-echo -e ""
+# Start the loader
+task="loader.sh"
+msg="InProgress"
+wget -O loader.sh https://raw.githubusercontent.com/bynueman/Node-Crypto/main/loader.sh && chmod +x loader.sh && ./loader.sh & spinner "$task" "$msg"
 
 sleep 2
 
@@ -58,7 +65,6 @@ sudo apt install -y tmux
 sudo echo "deb http://security.ubuntu.com/ubuntu jammy-security main" >> /etc/apt/sources.list
 sudo apt -qy update && sudo apt -qy install libc6
 
-# rm -rf nubit-node $HOME/.nubit-light-nubit-alphatestnet-1
 rm -rf nubit-node
 
 tmux new -s nubit "curl -sL1 https://nubit.sh | bash"
