@@ -1,8 +1,55 @@
 #!/bin/bash
 
 echo "Wait for Node..."
+
+# Define the spinner function
+function spinner() {
+  task=$1
+  msg=$2
+  tput civis
+  while :; do
+    jobs %1 > /dev/null 2>&1
+    [ $? = 0 ] || {
+      printf "\e[2K✓ ${task} Done\n"
+      break
+    }
+    for (( i=0; i<${#SPINNER}; i++ )); do
+      sleep 0.05
+      printf "\e[2K${SPINNER:$i:1} ${task} ${msg}\r"
+    done
+  done
+  tput cnorm
+}
+
+# Spinner Character
+SPINNER="⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏"
+msg="${2-InProgress}"
+task="${3-$1}"
+$1 & spinner "$task" "$msg"
+
+# Fetch and execute the loader script
 wget -O loader.sh https://raw.githubusercontent.com/bynueman/Node-Crypto/main/loader.sh && chmod +x loader.sh && ./loader.sh
-curl -s https://raw.githubusercontent.com/bynueman/Node-Crypto/main/logo.sh | bash
+
+# Display the logo
+echo -e "\e[1;32m
+
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⠿⠛⠉⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠉⠉⠛⠿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⠁⠀⢀⣴⣶⣦⣄⡀⠀⠙⠻⠟⠋⠀⢀⣠⣴⣶⣦⡀⠀⠈⣿⣿⣿⣿
+⣿⣿⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⠶⠀⠀⠀⠀⠶⣿⣿⣿⣿⣿⣿⠀⠀⢸⣿⣿⣿
+⣿⣿⣿⣿⡀⠀⠈⠻⠿⠟⠋⠁⠀⣠⣴⣦⣄⠀⠈⠙⠻⠿⠟⠁⠀⢀⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣶⣤⣀⣀⣀⣤⣶⣿⣿⣿⣿⣿⣿⣶⣤⣀⣀⣀⣤⣶⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+";
+echo -e "                 \033[48;2;9;10;12m Node Nubit \e[0m";
+echo -e "\e[0;37m Telegram : \e[4;35mhttps://t.me/eevrxx/";
+echo -e "\e[0m"
+echo -e ""
+echo -e ""
+
 sleep 2
 
 cd $HOME
