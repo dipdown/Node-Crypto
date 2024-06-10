@@ -3,5 +3,5 @@ Nubit is a scalable, cost-efficient, data availability layer secured by Bitcoin 
 
 # Installation
    ```sh
-   wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/Nubit/nubit.sh && chmod +x nubit.sh && ./nubit.sh
+   wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/Nubit/light-node.sh && chmod +x light-node.sh && ./light-node.sh
    ```
