@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Wait for Node..."
-wget -O loader.sh https://raw.githubusercontent.com/dipdown/Nubit-Node/main/logo.sh && chmod +x loader.sh && ./loader.sh
-curl -s https://raw.githubusercontent.com/Nubit-Node/main/logo.sh | bash
+wget -O loader.sh https://raw.githubusercontent.com/dipdown/Nubit-Node/main/loader.sh && chmod +x loader.sh && ./loader.sh
+curl -s https://raw.githubusercontent.com/dipdown/Nubit-Node/main/logo.sh | bash
 sleep 2
 
 cd $HOME
