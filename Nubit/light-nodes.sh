@@ -48,13 +48,7 @@ SPINNER="⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏"
 display_logo
 
 echo "Wait for Node..."
-
-# Start the loader
-task="loader.sh"
-msg="InProgress"
-wget -O loader.sh https://raw.githubusercontent.com/bynueman/Node-Crypto/main/loader.sh && chmod +x loader.sh && ./loader.sh & spinner "$task" "$msg"
-
-sleep 2
+sleep 5
 
 cd $HOME
 
