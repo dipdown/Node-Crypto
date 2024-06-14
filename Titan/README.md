@@ -10,7 +10,7 @@ Titan Network has developed a universal DePIN service platform enabling anyone t
    ```
 
    ```sh
-   wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/Titan/titan-node.sh && chmod +x light-nodes.sh && ./light-nodes.sh
+   wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/Titan/titan-node.sh && chmod +x titan-node.sh && ./titan-node.sh
    ```
 
 # Hardware Requirements
