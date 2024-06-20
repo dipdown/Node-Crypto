@@ -11,3 +11,19 @@ Zero-knowledge and validity proofs have gained attention due to their capabiliti
 - If done, go to "nexus-project" folder
 - Download the "nexus-proof"
 - Done
+
+# Next Task
+- Capture a screenshot of your terminal.
+- Post on X with the following caption:
+  ```sh
+  Just submitted proof via @alignedlayer.
+  I am now #aligned ✅
+
+  YOUR_EXPLORER_LINK (retrieve from the terminal)
+  ```
+  Example : [Click Link](https://x.com/RixGeologic/status/1803559073767723448) 
+- Next, submit on [Discord](https://discord.gg/alignedlayer).
+- To back up your data, execute this command:
+  ```sh
+  cat ~/aligned_verification_data/*.json
+  ```
