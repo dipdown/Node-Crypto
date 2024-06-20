@@ -27,3 +27,4 @@ Zero-knowledge and validity proofs have gained attention due to their capabiliti
   ```sh
   cat ~/aligned_verification_data/*.json
   ```
+- Done.
