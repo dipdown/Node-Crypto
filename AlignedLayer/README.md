@@ -27,4 +27,5 @@ Zero-knowledge and validity proofs have gained attention due to their capabiliti
   ```sh
   cat ~/aligned_verification_data/*.json
   ```
-- Done.
+- Copy all the data and save it on your local device.
+- Let me know your feedback, thanks guys.
