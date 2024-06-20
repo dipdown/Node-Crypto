@@ -6,7 +6,7 @@ Zero-knowledge and validity proofs have gained attention due to their capabiliti
 - Create a new workspace and paste repository on Github
 - Paste the code to terminal and running
   ```sh
-   wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/AlignedLayer/aligned-layer.sh && chmod +x aligned-layer.sh && ./aligned-layer.sh
+   wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/AlignedLayer/alignedlayer.sh && chmod +x alignedlayer.sh && ./alignedlayer.sh
    ```
 - If done, go to "nexus-project" folder
 - Download the "nexus-proof"
