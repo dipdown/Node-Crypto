@@ -8,8 +8,8 @@ Zero-knowledge and validity proofs have gained attention due to their capabiliti
   ```sh
    wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/AlignedLayer/alignedlayer.sh && chmod +x alignedlayer.sh && ./alignedlayer.sh
    ```
-- If done, go to "nexus-project" folder
-- Download the "nexus-proof"
+- If done, go to folder
+- Download the "proof"
 - Done
 
 # Next Task
