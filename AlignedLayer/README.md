@@ -8,10 +8,10 @@ Zero-knowledge and validity proofs have gained attention due to their capabiliti
   ```sh
    wget https://raw.githubusercontent.com/dipdown/Node-Crypto/main/AlignedLayer/alignedlayer.sh && chmod +x alignedlayer.sh && ./alignedlayer.sh
    ```
-- If done, go to folder
-- Download the "proof"
-- Done
-
+- To back up your data, execute this command:
+  ```sh
+  cat ~/aligned_verification_data/*.json
+  ```
 # Next Task
 - Capture a screenshot of your terminal.
 - Post on X with the following caption:
@@ -23,9 +23,5 @@ Zero-knowledge and validity proofs have gained attention due to their capabiliti
   ```
   Example : [Click Link](https://x.com/RixGeologic/status/1803559073767723448) 
 - Next, submit on [Discord](https://discord.gg/alignedlayer).
-- To back up your data, execute this command:
-  ```sh
-  cat ~/aligned_verification_data/*.json
-  ```
 - Copy all the data and save it on your local device.
 - Let me know your feedback, thanks guys.
