@@ -6,8 +6,8 @@ echo "   Multiple Network Node Installer"
 echo "======================================"
 sleep 2
 
-curl -s https://raw.githubusercontent.com/DiscoverMyself/Ramanode-Guides/main/logo.sh | bash
-sleep 2
+echo "Wait For Installation"
+sleep 5
 
 echo "Starting system update..."
 sudo apt update && sudo apt upgrade -y
