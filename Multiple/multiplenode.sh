@@ -6,9 +6,6 @@ echo "   Multiple Network Node Installer"
 echo "======================================"
 sleep 2
 
-echo "Wait For Installation"
-sleep 5
-
 echo "Starting system update..."
 sudo apt update && sudo apt upgrade -y
 
