@@ -3,6 +3,7 @@
 # Menampilkan header
 echo "======================================"
 echo "   Multiple Network Node Installer"
+echo "         By Share It Hub"
 echo "======================================"
 sleep 2
 
