@@ -48,7 +48,7 @@ read -p "Account ID: " IDENTIFIER
 read -p "Set your PIN: " PIN
 
 echo "Binding account with ID: $IDENTIFIER and PIN: $PIN..."
-multiple-cli bind --bandwidth-download 100 --identifier $IDENTIFIER --pin $PIN --storage 200 --bandwidth-upload 100
+multiple-cli bind --bandwidth-download 500 --identifier $IDENTIFIER --pin $PIN --storage 5000 --bandwidth-upload 500
 
 echo "Installation completed successfully!"
 echo "Channel Telegram: https://t.me/SHAREITHUB_COM"
