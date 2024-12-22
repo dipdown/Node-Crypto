@@ -9,27 +9,6 @@ INIMINER_FILE="iniminer-linux-x64"
 
 SCREEN_NAME="shareithub_initverse"
 
-check_ram() {
-    echo
-    echo "========================================"
-    echo "🧠 Checking system RAM..."
-    echo "========================================"
-    
-    TOTAL_RAM=$(free -m | grep Mem: | awk '{print $2}')
-    
-    RAM_GB=$((TOTAL_RAM / 1024))
-    
-    echo "RAM detected! The system has ${RAM_GB} GB RAM."
-
-    if [ $RAM_GB -ge 4 ]; then
-        echo "✅ Sufficient RAM for mining."
-    else
-        echo "❌ Not enough RAM for optimal mining. It's recommended to have at least 4 GB of RAM."
-        exit 1
-    fi
-    echo
-}
-
 update_system_and_install_screen() {
     echo
     echo "========================================"
@@ -104,8 +83,6 @@ run_inichain_miner() {
     fi
     echo
 }
-
-check_ram
 
 update_system_and_install_screen
 download_inichain
